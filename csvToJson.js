@@ -28,7 +28,7 @@ var xmlReq = new XMLHttpRequest();
 xmlReq.addEventListener("load", xmlListener);
 xmlReq.addEventListener("error", transferError);
 xmlReq.addEventListener("progress", transferProgress);
-xmlReq.open("GET", "http://localhost/SocialCopsDemo/sachin.csv");
+xmlReq.open("GET", "https://ajayposhak.github.io/sachin.csv");
 xmlReq.send();
 
 /**
