@@ -1,0 +1,91 @@
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#landing-section div {
+    background-image: url("../images/stadium.jpg");
+    background-position: center;
+    height: 540px;
+    width: 100%;
+    border-radius: 2%;
+}
+
+#landing-section p {
+    font-size: 25px;
+    color: #fff;
+    padding: 18% 10% 0 10%;
+}
+
+.next-page, .previous-page {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.next-page:hover, .previous-page:hover {
+    background-color: #000;
+    opacity: 0.3;
+}
+
+.next-page p, .previous-page p {
+    margin: 0 auto;
+    font-size: 35px;
+    padding-left: 33%;
+    padding-top: 0%;
+    position: relative;
+    color: #000;
+}
+
+.previous-page p {
+    padding-left: 26%;
+}
+
+.next-page p:hover, .previous-page p:hover {
+    color: #fff;
+}
+
+.navButtons {
+    margin-left: 45%;
+}
+
+.quote-text {
+    font-size: 25px;
+    padding: 5% 10% 10% 10%;
+}
+
+.side-quote-text {
+    display: inline-block;
+    float: right;
+    width: 300px;
+    padding-top: 10%;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.right-quote-text {
+    float: left;
+    width: 300px;
+    padding-left: 5%;
+    padding-top: 10%;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.god-cricket {
+    background-image: url('../images/Sachin.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10%;
+    height: 480px;
+}
+
+.god-quote {
+    padding-left: 5%;
+    width: 90%;
+}
