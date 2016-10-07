@@ -1,0 +1,106 @@
+body {
+	font-family: Roboto, Sans Serif;
+	margin: 0;
+}
+
+.sideBar {
+	max-width: 350px;
+	display: inline-block;
+	margin-left: -270px;
+	/*animation-duration: 3s;
+	animation-name: slideIn;*/
+}
+@keyframes slideIn {
+	from {
+		margin-left: -50%;
+		width: 300%;
+	}
+	to {
+		margin-left: 0%;
+		width: 100%;
+	}
+}
+@keyframes slideOut {
+	from {
+		margin-left: 50%;
+		width: 100%;
+	}
+	to {
+		margin-left: -50%;
+		width: 300%;
+	}
+}
+.personal-info {
+	margin: 20px;
+	overflow: hidden;
+	margin-right: 0px;
+}
+
+.personal-info img {
+	border-radius: 50%;
+	width: 75px;
+	height: 75px;
+	float: left;
+	
+}
+.name {
+	float: left;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.name .profile-name {
+	font-size: 20px;
+	font-weight: 300;
+	display: block;
+}
+
+.name .nick-name {
+	font-size: 15px;
+	font-weight: 300;
+}
+.list {
+	clear: both;
+	margin-top: 20px;
+}
+.list ul {
+	padding-left: 0px;
+}
+
+.list ul li {
+	list-style: none;
+	font-weight: 200;
+	font-size: 18px;
+	padding: 20px;
+	margin-bottom: 2px;
+	background-color: #fff;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.list ul li p {
+	display: inline-block;
+	margin-top: 0px;
+}
+
+.list ul li p:last-child {
+	float: right;
+	margin-top: 4px;
+}
+.list ul li img {
+	width: 20px;
+	height: 20px;
+	padding-right: 40px;
+}
+
+.hide {
+	visibility: hidden;
+}
+.main-page {
+	display: inline-block;
+	vertical-align: top;
+}
+@media screen and (max-width: 768px){
+	.sideBar {
+		max-width: 280px;
+	}
+	
+}

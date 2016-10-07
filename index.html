@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="custom.css" rel="stylesheet">
+		<link href="//fonts.googleapis.com/css?family=Roboto:400,300,200,100&subset=latin,cyrillic" rel="stylesheet">
+	</head>
+	<body>
+		<section class="sideBar">
+			<section class="personal-info">
+				<img src="images/kokachin.jpg" alt="Kokachin">
+				<div class="name">
+					<span class="profile-name">Princess Kokachin</span>
+					<span class="nick-name">@ZhuZhu</span>
+				</div>
+			</section>
+			<section class="list">
+				<ul>
+					<li>
+						<img src="images/home.svg" alt="Home">
+						<p>Home</p>
+						<p>></p>
+					</li>
+					<li>
+						<img src="images/user.svg" alt="User">
+						<p>Profile</p>
+						<p>></p>
+					</li>
+					<li>
+						<img src="images/heart.svg" alt="Wishlist">
+						<p>Wishlist</p>
+						<p>></p>
+					</li>
+					<li>
+						<img src="images/settings.svg" alt="Settings">
+						<p>Settings</p>
+						<p>></p>
+					</li>
+					<li>
+						<img src="images/message.svg" alt="Mail">
+						<p>Invite</p>
+						<p>></p>
+					</li>
+					<li>
+						<img src="images/how.svg" alt="How">
+						<p>How Jiffy Works</p>
+						<p>></p>
+					</li>
+					<li>
+						<img src="images/help.svg" alt="help">
+						<p>Help</p>
+						<p>></p>
+					</li>
+				</ul>
+			</section>
+		</section>
+		<section class="main-page">
+			<img src="images/hamburger.svg" alt="hamburger" id="hamburgerButton">
+		</section>
+	</body>
+	<script>
+		var btn = document.getElementById("hamburgerButton");
+		btn.addEventListener('click', handler, false);
+		var flag = true;
+		function handler(){
+			console.log(flag);
+			var sideBar = document.querySelector('.sideBar');
+			if(flag){
+				//sideBar.classList.remove('hide');
+				sideBar.style["transition"] = "1s";
+				sideBar.style["margin-left"] = "0px";
+				flag = false;
+			}
+			else {
+				//sideBar.classList.add('hide');
+				//sideBar.style["animation-duration"] = "1s";
+				//sideBar.style["animation-name"] = "slideOut";
+				sideBar.style["transition"] = "1s";
+				sideBar.style["margin-left"] = "-270px";
+				flag = true;
+			}
+			
+		}
+	</script>
+</html>
