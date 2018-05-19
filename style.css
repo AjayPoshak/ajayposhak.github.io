@@ -5,7 +5,7 @@
 
 body {
   color: #363a3b;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .home-container {
@@ -55,22 +55,22 @@ body {
 }
 
 @keyframes open {
-    from {
-      width: 0;
-    }
-    to {
-      width: 50%;
-    }
+  from {
+    width: 0;
   }
- 
- @keyframes close {
-    from {
-      width: 50%;
-    }
-    to {
-      width: 0;
-    }
+  to {
+    width: 50%;
   }
+}
+
+@keyframes close {
+  from {
+    width: 50%;
+  }
+  to {
+    width: 0;
+  }
+}
 
 .head-container .nav-bar {
   list-style: none;
@@ -109,14 +109,13 @@ body {
 .section {
   margin: 10px 20px 20px 0;
   width: 100%;
-  /* margin-bottom: 50px; */
 }
 
 .section .__header {
   padding-bottom: 15px;
 }
 .__second .__info .__info-section {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
@@ -203,7 +202,8 @@ video {
   height: 450px;
   z-index: -100;
   transform: translateX(-50%) translateY(-50%);
-  background: url(//demosthenes.info/assets/images/polina.jpg) no-repeat;
+  background: url(http://res.cloudinary.com/ddbxa4afa/image/upload/v1526746543/holder_sh9oxq.png)
+    no-repeat;
   background-size: cover;
   transition: 1s opacity;
 }
@@ -216,37 +216,35 @@ video {
 }
 
 .nav .nav-icon {
-    color: #000;
-    background: #000;
-    height: 1px;
-    width: 16px;
-    display: block;
-    position: absolute;
-    top: 10px;
-    left: 2px;
-  }
+  color: #000;
+  background: #000;
+  height: 1px;
+  width: 16px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 2px;
+}
 
 .nav:before {
-    content: '';
-    color: #000;
-    background: #000;
-    height: 1px;
-    width: 20px;
-    display: block;
-    top: 0px;
-    position: absolute;
-  }
+  content: "";
+  color: #000;
+  background: #000;
+  height: 1px;
+  width: 20px;
+  display: block;
+  top: 0px;
+  position: absolute;
+}
 
 .nav:after {
-    content: '';
-    color: #000;
-    background: #000;
-    height: 1px;
-    width: 12px;
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 2px;
-  }
-
-  
+  content: "";
+  color: #000;
+  background: #000;
+  height: 1px;
+  width: 12px;
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 2px;
+}
