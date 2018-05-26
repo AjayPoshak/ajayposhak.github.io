@@ -40,14 +40,16 @@
 				</ul>
 			</header>
 			<article class="__details">
-				<section class='video-player'>
-					<video autoplay muted loop>
+				<section class='video-player' id='js-video'>
+					<!-- <video autoplay muted loop>
 						<source src='http://res.cloudinary.com/ddbxa4afa/video/upload/ac_none,c_scale,h_450,q_auto:eco,w_434/v1526734008/WhatsApp_Video_2018-05-19_at_3.14.30_PM_k6f5aw.mp4'
 						 type='video/mp4' />
 						<source src='http://res.cloudinary.com/ddbxa4afa/video/upload/ac_none,c_scale,h_450,q_auto:eco,w_434/v1526734008/WhatsApp_Video_2018-05-19_at_3.14.30_PM_k6f5aw.webm'
 						 type='video/webm' />
-					</video>
-					<img src='http://res.cloudinary.com/ddbxa4afa/image/upload/c_scale,w_434,h_400/v1526746543/holder_sh9oxq.png' />
+					</video> -->
+					<img class='mobile' src='http://res.cloudinary.com/ddbxa4afa/image/upload/c_scale,w_434,h_400/v1526746543/holder_sh9oxq.png'
+					/>
+					<img class='desktop' src='https://res.cloudinary.com/ddbxa4afa/image/upload/v1526746543/holder_sh9oxq.png' />
 					<article>
 						<p class='__video-text'>We at Digi-Doo believe in a world driven by innovation and are focused on growing brands online.</p>
 					</article>
@@ -210,6 +212,7 @@
 		</section>
 	</section>
 </body>
+<script src='./mobile-detect.js'></script>
 <script src='./main.js'></script>
 
 </html>
