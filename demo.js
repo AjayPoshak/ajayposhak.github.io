@@ -10,10 +10,10 @@ function generate() {
 	if (withOutWorker) {
 		arr = calcWithoutWorker(num);
 		showTable(arr);
+		hideLoader();
 	} else {
-		arr = initWorker(num, showTable);
+		arr = initWorker(num);
 	}
-	hideLoader();
 }
 
 function showTimeTaken(params) {
@@ -55,7 +55,7 @@ function hideLoader() {
 	loader.style.visibility = 'hidden';
 }
 let startWorkerTime;
-function initWorker(n, cb) {
+function initWorker(n) {
 	console.log('worker initiated');
 	startWorkerTime = performance.now();
 	worker.postMessage(n);
@@ -83,4 +83,5 @@ worker.addEventListener('message', function(e) {
 	console.log(`worker done ${startWorkerTime} ${endWorkerTime}`);
 	showTimeTaken(endWorkerTime - startWorkerTime);
 	showTable(e.data);
+	hideLoader();
 });
