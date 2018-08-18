@@ -4,6 +4,7 @@ function generate() {
 	const withOutWorker = document.getElementById('without-worker').checked;
 	const withWorker = document.getElementById('with-worker').checked;
 	const num = document.getElementById('num').value;
+	resetTimer();
 	showLoader();
 	destroyTable();
 	let arr = [];
@@ -14,6 +15,10 @@ function generate() {
 	} else {
 		arr = initWorker(num);
 	}
+}
+
+function resetTimer() {
+	showTimeTaken(0);
 }
 
 function showTimeTaken(params) {
